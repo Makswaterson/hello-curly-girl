@@ -1,0 +1,25 @@
+.body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.position {
+  font-weight: bold;
+}
+.name {
+  font-style: oblique;
+}
+.heading-table {
+  text-transform: uppercase;
+}
+.work-link {
+  color: #00f;
+}
+.work-link:visited {
+  color: #005;
+}
+.work-link:hover {
+  text-decoration: none;
+}
+.item-skills {
+  list-style-type: square;
+}

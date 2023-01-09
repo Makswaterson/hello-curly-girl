@@ -9,19 +9,19 @@
 }
 .name-container {
   display: flex;
-  /* justify-content: space-between; */
-  /* width: 100%;
-  float: left; */
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper-position {
+  display: flex;
+  flex-direction: column;
 }
 .name {
-  /* display: block; */
   font-style: oblique;
   border-bottom: 2px solid rgb(141, 230, 141);
   border-width: 100%;
 }
 .img-border {
-  /* float: right; */
-
   padding: 10px;
   border: 2px solid rgb(141, 230, 141);
   border-width: 100%;

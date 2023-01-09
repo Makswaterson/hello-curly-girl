@@ -8,6 +8,7 @@
   border-width: 100%;
 }
 .name {
+  /* display: block; */
   font-style: oblique;
   border-bottom: 2px solid rgb(141, 230, 141);
   border-width: 100%;
@@ -17,6 +18,10 @@
   border: 2px solid rgb(141, 230, 141);
   border-width: 100%;
 }
+table {
+  width: 100%;
+}
+
 .heading-table {
   text-transform: uppercase;
 }

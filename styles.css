@@ -4,12 +4,27 @@
 }
 .position {
   font-weight: bold;
+  border-bottom: 2px solid rgb(141, 230, 141);
+  border-width: 100%;
 }
 .name {
   font-style: oblique;
+  border-bottom: 2px solid rgb(141, 230, 141);
+  border-width: 100%;
+}
+.img-border {
+  padding: 10px;
+  border: 2px solid rgb(141, 230, 141);
+  border-width: 100%;
 }
 .heading-table {
   text-transform: uppercase;
+}
+th {
+  background-color: rgb(141, 230, 141);
+}
+td {
+  background-color: rgb(215, 244, 215);
 }
 .work-link {
   color: #00f;
@@ -22,4 +37,10 @@
 }
 .item-skills {
   list-style-type: square;
+  border-bottom: 2px solid rgb(141, 230, 141);
+  border-width: 100%;
+}
+.item-ol {
+  border-bottom: 2px solid rgb(141, 230, 141);
+  border-width: 100%;
 }

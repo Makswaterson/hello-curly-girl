@@ -5,7 +5,7 @@
 .position {
   font-weight: bold;
   border-bottom: 2px solid rgb(141, 230, 141);
-  border-width: 100%;
+  border-width: auto;
 }
 .name-container {
   display: flex;
@@ -19,12 +19,12 @@
 .name {
   font-style: oblique;
   border-bottom: 2px solid rgb(141, 230, 141);
-  border-width: 100%;
+  border-width: auto;
 }
 .img-border {
   padding: 10px;
   border: 2px solid rgb(141, 230, 141);
-  border-width: 100%;
+  border-width: auto;
 }
 table {
   width: 100%;
@@ -51,9 +51,9 @@ td {
 .item-skills {
   list-style-type: square;
   border-bottom: 2px solid rgb(141, 230, 141);
-  border-width: 100%;
+  border-width: auto;
 }
 .item-ol {
   border-bottom: 2px solid rgb(141, 230, 141);
-  border-width: 100%;
+  border-width: auto;
 }

@@ -1,0 +1,86 @@
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+fieldset {
+  margin-top: 20px;
+}
+table {
+  outline-style: auto;
+  outline-color: #333;
+}
+select {
+  min-width: 17rem;
+  border: 2px solid #333;
+  font-size: 16px;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+textarea {
+  min-width: 20rem;
+  min-height: 7rem;
+  border: 2px solid #333;
+  font-size: 16px;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  outline-color: rgba(8, 42, 234, 0.974);
+  margin-top: 20px;
+}
+input {
+  border: 2px solid #333;
+  min-width: 15rem;
+  font-size: 16px;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  outline-color: rgba(8, 42, 234, 0.974);
+  margin-top: 20px;
+}
+.button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: rgb(76, 100, 231);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(8, 42, 234, 0.974);
+  outline-style: rgb(95, 87, 87);
+  outline: dotted #333;
+}
+input,
+textarea:invalid {
+  border-color: red;
+}
+input,
+textarea:valid {
+  border-color: green;
+}
+.error {
+  display: none;
+  color: red;
+}
+.success {
+  display: none;
+  color: green;
+}
+
+.label-email,
+.label-description:invalid + .error {
+  display: block;
+}
+.label-email,
+.label-description:valid + .success {
+  display: block;
+}

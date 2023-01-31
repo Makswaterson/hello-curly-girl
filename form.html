@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robot</title>
+     <link href="./style-form.css" rel="stylesheet">
   </head>
   <body>
     
@@ -26,31 +27,41 @@
         </td>
       </tr>
 </table>
-    <form action="/feature.html">
+    <form  action="/feature.html">
       <fieldset>
         <legend>Contact form</legend>
-       <label 
-        >Email*   :
-              <input id="email" type="email" name="name-email" required />
+       <label for="email"
+        >Email*:
+        
+              <input id="email" class="label-email" type="email" name="name-email" required           maxlength="19"
+          minlength="6" />
+              <p class="error">Error message</p>
+              <p class="success">Success message</p>
       </label>
       </br>
-      <label>Description: 
-        <textarea name="message" rows="5" cols="20">
-
+      <label for="description">Description: 
+        
+        <textarea id="description" class="label-description" name="message" placeholder="Hint text" required 
+        maxlength="300"
+        minlength="10"
+        rows="5" 
+        cols="20">
 </textarea>
+<p class="error">Error message</p>
+<p class="success">Success message</p>
       </label>
    
     </br>
-      <label
+      <label for="work-type"
         >Work type
-        <select name="name-work" required>
+        <select id="work-type" name="name-work" required>
           <option value="full-time">Full-time</option>
           <option value="part-time">Part-time</option>
            <option value="one-project_time">One project</option>
         </select>
       </label>
        </br>
-      <input type="submit"value="Hire me" >
+      <input class="button" type="submit"value="Hire me" >
       </fieldset>
     </form>
     

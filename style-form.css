@@ -76,11 +76,11 @@ textarea:valid {
   color: green;
 }
 
-.label-email,
-.label-description:invalid + .error {
+.email,
+.description:invalid + .error {
   display: block;
 }
-.label-email,
-.label-description:valid + .success {
+.email,
+.description:valid + .success {
   display: block;
 }

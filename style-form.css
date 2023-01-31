@@ -62,20 +62,22 @@ input {
   border: 1px solid #333;
   border-radius: 10px;
   min-width: 17rem;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%),
+    0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
 .button:hover,
 .button:focus {
-  background-color: rgba(8, 42, 234, 0.974);
+  background-color: rgba(48, 41, 140, 0.974);
   outline-style: rgb(95, 87, 87);
   outline: dotted #333;
 }
-input,
-textarea:invalid {
-  border-color: red;
+.email:invalid,
+.description:invalid {
+  border-color: #f44336;
 }
-input,
-textarea:valid {
-  border-color: green;
+.email:valid,
+.description:valid {
+  border-color: #4caf50;
 }
 .error {
   display: none;
@@ -86,11 +88,11 @@ textarea:valid {
   color: green;
 }
 
-.email,
+.email:invalid + .error,
 .description:invalid + .error {
   display: block;
 }
-.email,
+.email:valid + .success,
 .description:valid + .success {
   display: block;
 }

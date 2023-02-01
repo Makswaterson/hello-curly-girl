@@ -5,7 +5,9 @@ body {
   max-width: 1024px;
   font-family: 'IBM Plex Sans', sans-serif;
 }
-
+span {
+  color: red;
+}
 input,
 select,
 textarea {

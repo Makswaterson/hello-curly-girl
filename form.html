@@ -30,7 +30,7 @@
     <form  action="/feature.html">
       <fieldset>
         <legend>Contact form</legend>
-       <label for="email"
+       <label class="name-work" for="email"
         >Email<span>*</span>:
         
               <input id="email" class="email" type="email" name="name-email" required    maxlength="49"
@@ -39,7 +39,7 @@
               <p class="success">Success message</p>
       </label>
       </br>
-      <label for="description">Description: 
+      <label class="name-work" for="description">Description<span>*</span>: 
         
         <textarea id="description" class="description" name="message" placeholder="Hint text" required 
         maxlength="300"
@@ -52,9 +52,9 @@
       </label>
    
     </br>
-      <label for="work-type"
-        >Work type
-        <select id="work-type" name="name-work" required>
+      <label for="work-type" class="name-work"
+        >Work type:
+        <select id="work-type" class="name-work" name="name-work" required>
           <option value="full-time">Full-time</option>
           <option value="part-time">Part-time</option>
            <option value="one-project_time">One project</option>

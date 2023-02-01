@@ -9,7 +9,6 @@ body {
 input,
 select,
 textarea {
-  appearance: none;
   background-color: transparent;
   margin: 0;
   padding: 0;
@@ -90,6 +89,18 @@ input {
 .description:valid {
   border-color: #4caf50;
 }
+/* input:invalid {
+  background-color: #f8fafc;
+  border: none;
+  outline: 1px solid red;
+  border-radius: 2px;
+}
+​ input:valid {
+  background-color: #f8fafc;
+  border: none;
+  outline: 1px solid green;
+  border-radius: 2px;
+} */
 .error {
   display: none;
   color: red;
@@ -98,6 +109,19 @@ input {
   display: none;
   color: green;
 }
+
+/* input:invalid + .error {
+  display: block;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+​ input:valid + .error + .success {
+  display: block;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+} */
 
 .email:invalid + .error,
 .description:invalid {
@@ -111,7 +135,5 @@ input {
 
 textarea::placeholder {
   color: grey;
-  font-size: 12px;
-  font-style: italic;
   padding: 10px;
 }

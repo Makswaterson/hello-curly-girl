@@ -103,20 +103,15 @@ input {
 .description:invalid {
   display: block;
   font-size: 12px;
-  margin: 0;
-  padding: 0;
 }
 .email:valid + .success,
 .description:valid + .success {
   display: block;
 }
-.email,
-.description {
-  outline-color: rgba(8, 42, 234, 0.974);
-}
+
 textarea::placeholder {
   color: grey;
   font-size: 12px;
   font-style: italic;
-  padding: 5px;
+  padding: 10px;
 }

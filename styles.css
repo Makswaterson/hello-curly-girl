@@ -67,6 +67,7 @@ ul {
   padding-right: 30px;
 }
 aside {
+  position: sticky;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   padding: 0px;
   background: #86a3b4;

@@ -1,0 +1,12 @@
+.my-theme{
+  /* color */
+  --color-main-text: #22577A;
+  --color-main-headline: #38A3A5;
+  --color-main-primary: #57CC99;
+  --background-color-main-primary: #C7F9CC;
+  --background-aside-primary: #80ED99;
+  --color-contact-links-primary:#A7C957
+  --color-contact-links-secondary:#6A994E;
+  --color-box-shadow: #386641;
+  --background-color-btn: #2d6a4f
+}

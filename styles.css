@@ -31,6 +31,14 @@ ul {
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 380px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 379px;
+    margin: 0 auto;
+  }
+}
 .main-content {
   background-color: var(--background-color-main-primary);
   box-shadow:var( --color-box-shadow);
@@ -48,6 +56,18 @@ ul {
 .name {
   padding-bottom: 30px;
   border-bottom:  var(--border-bottom-main)
+}
+@media screen and (max-width: 380px) {
+  .name:first-child {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  aside {
+    display: block;
+    width: 379px;
+    padding: 30px 0px;
+  }
 }
 .about-info,
 .skills-list {
@@ -84,12 +104,29 @@ ul {
   padding-left: 15px;
   padding-right: 30px;
 }
+@media screen and (max-width: 380px) {
+  .skills-wrap {
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+}
 aside {
   position: sticky;
   box-shadow: var( --color-box-shadow);
   padding: 50px 0px;
   background: var(--background-aside-primary);
   width: 385px;
+}
+@media screen and (max-width: 380px) {
+  aside {
+    display: block;
+    width: 379px;
+    padding: 30px 0px;
+  }
 }
 .fullname {
   font-weight: 600;

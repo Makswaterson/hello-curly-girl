@@ -1,3 +1,14 @@
+@keyframes bigform {
+  from {
+    transform: scale(200%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 0;
+  }
+}
+
 body {
   position: relative;
   left: 50%;
@@ -64,7 +75,9 @@ textarea {
 
 form {
   margin-top: 16px;
+  animation: bigform 1s linear;
 }
+
 input {
   border: 2px solid #333;
   min-width: 15rem;

@@ -1,7 +1,6 @@
 :root {
-
   /* size */
-  --margin-bottom-main: 50px
+  --margin-bottom-main: 50px;
   --border-bottom-aside: 6px solid #1e1e1e;
 --border-bottom-main: 5px solid #000000;
 }
@@ -16,9 +15,20 @@
   --color-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   --background-color-btn: #0048d9
 }
+@keyframes bodyup {
+ 0% {
+margin-top: 50%;
+opacity: 0;
+  }
+  to {
+    margin-top: 0;
+opacity: 1;
+  }
+}
 .body {
   color: #333;
   font-family: Inter, Helvetica, sans-serif;
+  animation: bodyup 1s ease ;
 }
 ul {
   padding: 0;
@@ -161,7 +171,7 @@ aside {
   width: 289px;
   display: flex;
   justify-content: center;
-  border-bottom: var( --border-bottom-aside);
+  border-bottom: var(--border-bottom-aside);
   margin-bottom: 30px;
   margin-top: 15px;
 }
@@ -229,26 +239,25 @@ transition: all ease 0.5s;
 a {
   text-decoration: none;
 }
+.btn-link {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button-first {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   background-color:var(--background-color-btn);
   color: #fff;
-  text-decoration: none;
-
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  padding: 30px, 20px;
+  padding: 15px 50px;
   border: 1px solid #333;
   border-radius: 10px;
-
   box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%),
     0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
 .button-first:hover,
 .button-first:focus {
-  background-color: #002266;
+  background-color: #113c92;
   color: var(--color-main-primary);
   outline-style: rgb(95, 87, 87);
   outline: #333;

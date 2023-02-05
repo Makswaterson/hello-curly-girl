@@ -1,11 +1,11 @@
 @keyframes bigform {
   from {
-    transform: scale(200%);
-    opacity: 1;
+    transform: scale(200%) rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: scale(100%);
-    opacity: 0;
+    transform: scale(100%) rotate(360deg);
+    opacity: 1;
   }
 }
 

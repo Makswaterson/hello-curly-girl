@@ -62,13 +62,6 @@ ul {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 380px) {
-  aside {
-    display: block;
-    width: 379px;
-    padding: 30px 0px;
-  }
-}
 .about-info,
 .skills-list {
   font-weight: 600;
@@ -76,6 +69,13 @@ ul {
   line-height: 19px;
 
   color: var(--color-main-text);
+}
+.experience-opacity{
+  opacity: 70%;
+}
+.experience-opacity:hover,
+.experience-opacity:focus{
+  opacity: 100%;
 }
 .experience-info,
 .education-info {
@@ -126,8 +126,10 @@ aside {
     display: block;
     width: 379px;
     padding: 30px 0px;
+    box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
   }
 }
+
 .fullname {
   font-weight: 600;
   font-size: 40px;
@@ -168,7 +170,17 @@ aside {
   width: 385px;
   height: 292px;
   margin-bottom: 50px;
+  
 }
+@media screen and (min-width: 381px){
+  .img-border:hover,
+.img-border:focus {
+  filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.25));
+transform: scale(1.5)
+translate(+23%, 9%);
+}
+}
+
 .contact-adress {
   margin: 0px;
   font-weight: 600;

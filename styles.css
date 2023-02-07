@@ -41,8 +41,8 @@ ul {
 .main {
   
   display: flex;
-  /* justify-content: center;
-  flex-direction: row-reverse; */
+  justify-content: center;
+  flex-direction: row-reverse;
   width: 1200px;
   margin: 0 auto;
   animation: bodyup 2s linear ;
@@ -59,8 +59,7 @@ ul {
   background-color: var(--background-color-main-primary);
   box-shadow:var( --color-box-shadow);
   padding: 50px 60px;
-  width: 815px;
-  margin-left: 385px;
+ 
 }
 .summary {
   font-weight: 600;
@@ -137,10 +136,8 @@ aside {
   position: sticky;
   box-shadow: var( --color-box-shadow);
   padding: 50px 0px;
-  width: 385px;
   background: var(--background-aside-primary);
-  overflow: scroll;
-  
+  width: 385px;
 }
 @media screen and (max-width: 380px) {
   aside {

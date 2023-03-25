@@ -1,0 +1,20 @@
+$color-main-text: #263036;
+$color-main-headline: #1e1e1e;
+$color-main-primary: #000000;
+$background-color-main-primary: #ffffff;
+$background-aside-primary: #86a3b4;
+$color-contact-links-primary: #1c2e8c;
+$color-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+$background-color-btn: #0048d9;
+
+.main-theme {
+  /* color */
+  color: $color-main-text;
+  color: $color-main-headline;
+  color: $color-main-primary;
+  background-color: $background-color-main-primary;
+  background: $background-aside-primary;
+  color: $color-contact-links-primary;
+  box-shadow: $color-box-shadow;
+  //   background-color: $background-color-btn;
+}

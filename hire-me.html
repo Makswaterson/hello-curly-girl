@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robot</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
      <link href="./style-form.css" rel="stylesheet">
   </head>
-  <body>
+  <body class=" flex items-center justify-center  box-border  font-sans text-base w-128">
     
-<div class="wrapper">
-  <h2>Hire me</h2>
-<h3>Contact information</h3>
-<table border="2" cellspacing="0" cellpadding="10px">
+<!-- <div class="" >
+  <h2  class="text-3xl">Hire me</h2>
+<h3 class="text-2xl">Contact information</h3>
+<table border="2" class="border-collapse outline-gray-700 border-solid border-2 border-sky-500 " cellspacing="0" cellpadding="10px">
   <tr>
         <th >Phone</th>
 
@@ -29,20 +30,20 @@
       </tr>
 </table>
     <form  action="/feature.html">
-      <fieldset>
-        <legend>Contact form</legend>
-       <label class="name-work" for="email"
-        >Email<span>*</span>:
+      <fieldset class="space-y-5 outline-blue-500">
+        <legend class="outline-blue-500">Contact form</legend>
+       <label class="name-work m-0 p-0 border-none outline-blue-500 block text-base text-gray-700 my-1" for="email"
+        >Email<span class="text-red-600">*</span>:
         
-              <input id="email" class="email" type="email" name="name-email" required    maxlength="49"
+              <input id="email" class="email m-0 p-0 border-none" type="email" name="name-email" required    maxlength="49"
           minlength="6" />
               <p class="error">Error message</p>
               <p class="success">Success message</p>
       </label>
       </br>
-      <label class="name-work" for="description">Description<span>*</span>: 
+      <label class="name-work m-0 p-0 border-none block text-base outline-blue-500 text-gray-700 my-1" for="description">Description<span class="text-red-600">*</span>: 
         
-        <textarea id="description" class="description" name="message" placeholder="Hint text" required 
+        <textarea id="description" class="description border-solid  border-sky-500 outline-blue-500 rounded-xl py-2 px-3 text-base border-2  block border-sky-500  min-w-min min-h-min m-0 p-0 border-none" name="message" placeholder="Hint text" required 
         maxlength="300"
         minlength="10"
         rows="5" 
@@ -53,19 +54,79 @@
       </label>
    
     </br>
-      <label for="work-type" class="name-work"
+      <label for="work-type" class="name-work m-0 p-0 border-none outline-blue-500 text-base text-gray-700 my-1"
         >Work type:
-        <select id="work-type" class="name-work" name="name-work" required>
+        <select id="work-type" class="name-work m-0 p-0 py-2 px-3  rounded-md bg-white w-96 h-12 block text-base border-solid border-2 border-sky-500 k min-w-full border-none" name="name-work" required>
           <option value="full-time">Full-time</option>
           <option value="part-time">Part-time</option>
            <option value="one-project_time">One project</option>
         </select>
       </label>
        </br>
-      <input class="button" type="submit"value="Hire me" >
+      <input class="button m-0 p-0 border-none" type="submit"value="Hire me"  >
+      </fieldset>
+    </form>
+</div> -->
+
+
+<div class="" >
+  <h2  class="text-3xl outline-blue-500 block text-gray-700 text-sm font-bold mb-2">Hire me</h2>
+<h3 class="text-2xl outline-blue-500 block text-gray-700 text-sm font-bold mb-2">Contact information</h3>
+<table border="2" class="border-collapse outline-gray-700 border-solid border-2 border-sky-500 " cellspacing="0" cellpadding="10px">
+  <tr>
+        <th >Phone</th>
+
+        <td>
+          +380977299641
+        </td>
+      </tr>
+      <tr>
+        <th >Address</th>
+
+        <td>
+         Lviv
+        </td>
+      </tr>
+</table>
+    <form  action="/feature.html">
+      <fieldset class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <legend class="outline-blue-500 block text-gray-700 text-sm font-bold mb-2 text-2xl">Contact form</legend>
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="email"
+        >Email<span class="text-red-600">*</span>:
+        
+              <input id="email" class="email shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="name-email" required    maxlength="49"
+          minlength="6" />
+              <p class=" text-red-500 text-xs italic">Error message</p>
+              <p class="text-green-500 text-xs italic">Success message</p>
+      </label>
+      </br>
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="description">Description<span class="text-red-600">*</span>: 
+        
+        <textarea id="description" class="block shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-gray-700 text-sm font-bold mb-2" name="message" placeholder="Hint text" required 
+        maxlength="300"
+        minlength="10"
+        rows="5" 
+        cols="20">
+</textarea>
+              <p class=" text-red-500 text-xs italic">Error message</p>
+              <p class="text-green-500 text-xs italic">Success message</p>
+      </label>
+   
+    </br>
+      <label for="work-type" class="name-work m-0 p-0 border-none outline-blue-500 text-base text-gray-700 my-1"
+        >Work type:
+        <select id="work-type" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" name="name-work" required>
+          <option value="full-time">Full-time</option>
+          <option value="part-time">Part-time</option>
+           <option value="one-project_time">One project</option>
+        </select>
+      </label>
+       </br>
+      <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit"value="Hire me"  >
       </fieldset>
     </form>
 </div>
+
     
   </body>
 </html>
